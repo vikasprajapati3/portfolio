@@ -1,16 +1,36 @@
-# React + Vite
+# Vikas Prajapati — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio built with React, Vite, and Tailwind CSS.
 
-Currently, two official plugins are available:
+🔗 **Live:** [vikasprajapati3.github.io/portfolio](https://vikasprajapati3.github.io/portfolio)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Stack
 
-## React Compiler
+- React 18
+- Vite 5
+- Tailwind CSS 3
+- Formspree (contact form)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Run locally
 
-## Expanding the ESLint configuration
+```bash
+npm install
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Build
+
+```bash
+npm run build
+npm run preview
+```
+
+## Contact
+
+- Email: vikasrjc7@gmail.com
+- LinkedIn: [vikas-prajapati-0a1032330](https://www.linkedin.com/in/vikas-prajapati-0a1032330)
+- GitHub: [@vikasprajapati3](https://github.com/vikasprajapati3)
+
+## License
+
+MIT
