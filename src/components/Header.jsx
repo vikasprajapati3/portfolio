@@ -43,15 +43,7 @@ export default function Header() {
                         Contact
                     </a>
 
-                    <a
-                        href="/resume.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="ml-2 px-4 py-2 text-sm border border-line rounded
-                        hover:border-ink transition"
-                    >
-                        Resume
-                    </a>
+
 
                 </nav>
 

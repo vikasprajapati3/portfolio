@@ -35,6 +35,18 @@ export default function About() {
                             Currently improving my skills in modern frameworks and full-stack
                             development to build <span className="text-ink">impactful web experiences</span>.
                         </p>
+
+                        <a
+                            href="/resume.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 mt-4 text-ink
+                                   border-b border-ink pb-1
+                                   hover:opacity-60 transition-opacity"
+                        >
+                            View my resume
+                            <span>↗</span>
+                        </a>
                     </div>
 
 
