@@ -4,36 +4,46 @@ const PROJECTS = [
     {
         date: '2026',
         title: 'DishPix',
-        description: 'A social food-logging app to track, rate, and review your meals while exploring what others eat. Best in mobile view.',
+        description:
+            'A social food-logging app for discovering, sharing, rating, and reviewing meals through a clean and engaging interface.',
         tech: 'React · Node.js · Express · MongoDB',
         link: 'https://github.com/vikasprajapati3/DishPix',
-        preview: 'dishpix',
-    },
-    {
-        date: '2026',
-        title: 'Weather App',
-        description: 'A responsive weather app built with React and Vite, integrating a live weather API to display real-time conditions.',
-        tech: 'React · Vite · Weather API',
-        link: 'https://github.com/vikasprajapati3/weather-app',
-        preview: 'dashboard',
+        preview:
+            'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80',
     },
     {
         date: '2026',
         title: 'ColorzPro',
-        description: 'A simple and responsive color palette generator built with Tailwind CSS and JavaScript.',
-        tech: 'HTML · Tailwind CSS · JavaScript',
+        description:
+            'A visually engaging web project focused on colorful UI, responsive layouts, and a polished frontend experience.',
+        tech: 'HTML · CSS · JavaScript',
         link: 'https://github.com/vikasprajapati3/ColorzPro',
-        preview: 'portfolio',
+        preview:
+            'https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&w=1200&q=80',
     },
     {
         date: '2026',
-        title: 'My Field Project',
-        description: 'RJ college website integrated with a chatbot for interactive campus assistance.',
-        tech: 'JavaScript · Chatbot Integration',
-        link: 'https://github.com/vikasprajapati3/My-Field-Project',
-        preview: 'dishpix',
+        title: 'Weather App',
+        description:
+            'A responsive weather application built with React and Vite, using a live weather API to display real-time weather conditions.',
+        tech: 'React · Vite · Weather API',
+        link: 'https://github.com/vikasprajapati3/weather-app',
+        preview:
+            'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&w=1200&q=80',
     },
-]
+    {
+        date: '2026',
+        title: 'Music Player',
+        description:
+            'A responsive music player with a clean interface and custom controls designed for an enjoyable music-listening experience.',
+        tech: 'HTML · CSS · JavaScript',
+        link: 'https://github.com/vikasprajapati3/music-player',
+        preview:
+            'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1200&q=80',
+    },
+
+];
+
 
 const PREVIEW_BG = {
     dishpix: 'bg-gradient-to-br from-[#dedede] to-white',
