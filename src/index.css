@@ -10,3 +10,88 @@ html {
 body {
   @apply bg-bg text-ink font-sans antialiased;
 }
+
+::selection {
+  @apply bg-ink text-bg;
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Mock window (project previews) */
+.mock-window {
+  @apply absolute bg-white rounded-md overflow-hidden;
+  top: 12%;
+  left: 10%;
+  width: 80%;
+  height: 76%;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.mock-top {
+  @apply h-7 border-b border-gray-200 flex items-center px-2 gap-1;
+}
+
+.mock-dot {
+  @apply w-1 h-1 rounded-full bg-gray-400;
+}
+
+.mock-content {
+  @apply p-5;
+}
+
+.mock-line {
+  @apply h-[7px] bg-gray-200 rounded-full mb-2.5;
+}
+
+.mock-line.small {
+  width: 42%;
+}
+
+.mock-line.medium {
+  width: 65%;
+}
+
+.mock-line.large {
+  width: 85%;
+}
+
+.mock-boxes {
+  @apply grid grid-cols-3 gap-2 mt-5;
+}
+
+.mock-box {
+  @apply h-14 bg-gray-100 rounded;
+}
+
+.mock-block {
+  @apply w-full h-[90px] mt-5 bg-gray-200 rounded;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
