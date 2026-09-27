@@ -13,7 +13,7 @@ export default function Header() {
                 {/* Logo */}
                 <a
                     href="#top"
-                    className="text-2xl md:text-[27px] tracking-[-0.035em] hover:opacity-65 transition"
+                    className="text-2xl md:text-[27px] tracking-[-0.035em] hover:opacity-65 transition underline underline-offset-8"
                 >
                     Vikas Prajapati
                 </a>
