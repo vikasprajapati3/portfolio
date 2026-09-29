@@ -10,7 +10,7 @@ import {
 
 const LINKS = [
     {
-        href: 'mailto:your-email@example.com',
+        href: 'mailto:vikasrjc7@gmail.com',
         icon: faEnvelope,
         aria: 'Email',
         external: false,
