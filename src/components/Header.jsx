@@ -33,14 +33,14 @@ export default function Header() {
                     </a>
 
                     <a
-                        href="#contact"
+                        href="/resume.pdf"
                         className="text-lg md:text-xl text-ink relative
                         after:absolute after:left-0 after:-bottom-1 after:w-full after:h-px
                         after:bg-ink after:scale-x-0 after:origin-right
                         after:transition-transform hover:after:scale-x-100
                         hover:after:origin-left"
                     >
-                        Contact
+                        Resume
                     </a>
 
 
