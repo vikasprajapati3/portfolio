@@ -2,7 +2,7 @@
 
 Personal portfolio built with React, Vite, and Tailwind CSS.
 
-🔗 **Live:** [vikasprajapati3.github.io/portfolio](https://vikasprajapati3.github.io/portfolio)
+🔗 **Live:** [portfolio-vikasprajapati.vercel.app](https://portfolio-vikasprajapati.vercel.app)
 
 ## Stack
 
