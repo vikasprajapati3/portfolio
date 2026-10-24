@@ -8,7 +8,7 @@ export default function Hero() {
                 </h1>
 
                 <p className="mt-6 text-lg md:text-2xl text-muted leading-relaxed max-w-[850px]">
-                    I'm a full-stack developer focused on building production-ready web
+                    I'm a MERN-stack developer focused on building production-ready web
                     applications with clean interfaces, thoughtful interactions and a
                     constant interest in learning. Want to know even more{' '}
                     <a href="#about" className="text-ink underline underline-offset-4">about me?</a>
