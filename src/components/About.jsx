@@ -21,8 +21,8 @@ export default function About() {
 
                     <div className="space-y-6 text-lg md:text-xl text-ink/85 leading-relaxed">
                         <p>
-                            I'm <span className="text-ink">Vikas Prajapati</span> — an aspiring
-                            full-stack developer focused on building clean, responsive, and
+                            I'm <span className="text-ink">Vikas Prajapati</span> — a
+                            MERN-stack developer focused on building clean, responsive, and
                             user-friendly web applications.
                         </p>
 
