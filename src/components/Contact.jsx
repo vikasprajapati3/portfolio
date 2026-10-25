@@ -43,19 +43,20 @@ export default function Contact() {
             if (res.ok) {
                 setStatus('success')
                 setForm({ name: '', email: '', message: '' })
-                setTimeout(() => setStatus('idle'), 5000)
             } else {
                 setStatus('error')
-                setTimeout(() => setStatus('idle'), 5000)
             }
         } catch {
             setStatus('error')
+        } finally {
             setTimeout(() => setStatus('idle'), 5000)
         }
     }
 
-    const inputCls =
-        'w-full bg-transparent border-b border-line py-3 text-ink placeholder-muted text-base focus:outline-none focus:border-ink transition'
+    // Centralized reusable classes
+    const labelCls = "block text-muted text-sm uppercase tracking-wider mb-2"
+    const inputCls = "w-full bg-transparent border-b border-line py-3 text-ink placeholder-muted text-base focus:outline-none focus:border-ink transition"
+    const linkCls = "text-ink underline underline-offset-4"
 
     return (
         <section id="contact" ref={ref} className="reveal pb-32">
@@ -67,7 +68,7 @@ export default function Contact() {
                     <p className="text-lg md:text-xl text-muted leading-relaxed max-w-[850px] mb-10">
                         Have an idea, project or opportunity? I'd love to hear from you.
                         Or reach me directly at{' '}
-                        <a href="mailto:vikasrjc7@gmail.com" className="text-ink underline underline-offset-4">
+                        <a href="mailto:vikasrjc7@gmail.com" className={linkCls}>
                             vikasrjc7@gmail.com
                         </a>.
                     </p>
@@ -75,32 +76,31 @@ export default function Contact() {
                     <form onSubmit={submit} className="max-w-[600px] space-y-8">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <div>
-                                <label className="block text-muted text-sm uppercase tracking-wider mb-2">Name</label>
-                                <input type="text" name="name" value={form.name} onChange={update('name')}
+                                <label className={labelCls}>Name</label>
+                                <input type="text" value={form.name} onChange={update('name')}
                                     placeholder="Your name" className={inputCls} required />
                             </div>
                             <div>
-                                <label className="block text-muted text-sm uppercase tracking-wider mb-2">Email</label>
-                                <input type="email" name="email" value={form.email} onChange={update('email')}
+                                <label className={labelCls}>Email</label>
+                                <input type="email" value={form.email} onChange={update('email')}
                                     placeholder="you@example.com" className={inputCls} required />
                             </div>
                         </div>
 
                         <div>
-                            <label className="block text-muted text-sm uppercase tracking-wider mb-2">Message</label>
-                            <textarea name="message" rows="4" value={form.message} onChange={update('message')}
-                                placeholder="Tell me about your project..." className={inputCls + ' resize-none'} required />
+                            <label className={labelCls}>Message</label>
+                            <textarea rows="4" value={form.message} onChange={update('message')}
+                                placeholder="Tell me about your project..." className={`${inputCls} resize-none`} required />
                         </div>
 
                         <div className="flex items-center gap-4 flex-wrap">
                             <button type="submit" disabled={!valid || status === 'sending'}
-                                className="inline-flex items-center gap-2 px-6 py-3 border border-line rounded
-                                 bg-white text-black hover:gap-3 transition-all disabled:cursor-not-allowed">
+                                className="inline-flex items-center gap-2 px-6 py-3 border border-line rounded bg-white text-black hover:gap-3 transition-all disabled:cursor-not-allowed">
                                 {status === 'sending' ? 'Sending...' : 'Send message'} →
                             </button>
 
                             {status === 'success' && (
-                                <span className="text-green-500 text-base">✓ Message sent — I'll get back to you soon</span>
+                                <span className="text-green-500 text-base">✓ Message sent - I'll get back to you soon</span>
                             )}
                             {status === 'error' && (
                                 <span className="text-red-500 text-base">✗ Something went wrong. Try again or email me directly.</span>
@@ -112,11 +112,9 @@ export default function Contact() {
                         <p className="text-muted text-base">
                             Or find me on{' '}
                             <a href="https://www.linkedin.com/in/vikas-prajapati-0a1032330"
-                                target="_blank" rel="noopener noreferrer"
-                                className="text-ink underline underline-offset-4">LinkedIn</a>{' '}and{' '}
+                                target="_blank" rel="noopener noreferrer" className={linkCls}>LinkedIn</a>{' '}and{' '}
                             <a href="https://github.com/vikasprajapati3"
-                                target="_blank" rel="noopener noreferrer"
-                                className="text-ink underline underline-offset-4">GitHub</a>.
+                                target="_blank" rel="noopener noreferrer" className={linkCls}>GitHub</a>.
                         </p>
                     </div>
 
