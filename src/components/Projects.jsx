@@ -3,13 +3,23 @@ import { useEffect, useRef } from 'react'
 const PROJECTS = [
     {
         date: '2026',
+        title: 'ArtistHood - Artist booking platform',
+        description:
+            'A MERN-based artist booking platform with portfolio discovery, booking management, Razorpay test payment integration, and backend development as part of a team project.',
+        tech: 'React · Node.js · Express · MongoDB · Razorpay',
+        link: 'https://artist-hood.vercel.app/',
+        preview:
+            'https://res.cloudinary.com/l2uhz1px/image/upload/v1792944274/artisthood_thumbnail.png',
+    },
+    {
+        date: '2026',
         title: 'DishPix',
         description:
             'A social food-logging app for discovering, sharing, rating, and reviewing meals through a clean and engaging interface.',
         tech: 'React · Node.js · Express · MongoDB',
         link: 'https://github.com/vikasprajapati3/DishPix',
         preview:
-            'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80',
+            'https://res.cloudinary.com/l2uhz1px/image/upload/v1792942145/DishPix_Food_App_Showcase.png',
     },
     {
         date: '2026',
@@ -19,7 +29,7 @@ const PROJECTS = [
         tech: 'HTML · CSS · JavaScript',
         link: 'https://github.com/vikasprajapati3/ColorzPro',
         preview:
-            'https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&w=1200&q=80',
+            'https://res.cloudinary.com/l2uhz1px/image/upload/v1792943269/colorz_pro_thumbnail.png',
     },
     {
         date: '2026',
@@ -29,7 +39,7 @@ const PROJECTS = [
         tech: 'React · Vite · Weather API',
         link: 'https://github.com/vikasprajapati3/weather-app',
         preview:
-            'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&w=1200&q=80',
+            'https://res.cloudinary.com/l2uhz1px/image/upload/v1792943030/Weather_App_UI_Showcase.png',
     },
     {
         date: '2026',
@@ -39,7 +49,7 @@ const PROJECTS = [
         tech: 'HTML · CSS · JavaScript',
         link: 'https://github.com/vikasprajapati3/music-player',
         preview:
-            'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1200&q=80',
+            'https://res.cloudinary.com/l2uhz1px/image/upload/v1792942885/music_player_thumbnail.png',
     },
 
 ];
