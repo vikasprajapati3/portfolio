@@ -51,15 +51,7 @@ const PROJECTS = [
         preview:
             'https://res.cloudinary.com/l2uhz1px/image/upload/v1792942885/music_player_thumbnail.png',
     },
-
-];
-
-
-const PREVIEW_BG = {
-    dishpix: 'bg-gradient-to-br from-[#dedede] to-white',
-    dashboard: 'bg-gradient-to-br from-[#f2f2f2] to-white',
-    portfolio: 'bg-gradient-to-br from-[#e9e9e9] to-white',
-}
+]
 
 export default function Projects() {
     const ref = useRef(null)
@@ -98,37 +90,13 @@ export default function Projects() {
                                 </a>
                             </div>
 
-                            <div className={`relative w-full aspect-[1.45/1] rounded-xl overflow-hidden
-                               md:hover:scale-[1.02] transition-transform ${PREVIEW_BG[p.preview]}`}>
-                                <div className="mock-window">
-                                    <div className="mock-top">
-                                        <span className="mock-dot" /><span className="mock-dot" /><span className="mock-dot" />
-                                    </div>
-                                    <div className="mock-content">
-                                        {p.preview === 'dashboard' ? (
-                                            <>
-                                                <div className="mock-line medium" />
-                                                <div className="mock-line small" />
-                                                <div className="mock-boxes"><div className="mock-box" /><div className="mock-box" /><div className="mock-box" /></div>
-                                                <div className="mt-5"><div className="mock-line large" /><div className="mock-line medium" /></div>
-                                            </>
-                                        ) : p.preview === 'portfolio' ? (
-                                            <>
-                                                <div className="mock-line small" />
-                                                <div className="mock-line large" />
-                                                <div className="mock-block" />
-                                                <div className="mt-5"><div className="mock-line medium" /><div className="mock-line small" /></div>
-                                            </>
-                                        ) : (
-                                            <>
-                                                <div className="mock-line small" />
-                                                <div className="mock-line large" />
-                                                <div className="mock-line medium" />
-                                                <div className="mock-boxes"><div className="mock-box" /><div className="mock-box" /><div className="mock-box" /></div>
-                                            </>
-                                        )}
-                                    </div>
-                                </div>
+                            <div className="relative w-full aspect-[1.45/1] rounded-xl overflow-hidden shadow-md
+                                md:hover:scale-[1.02] transition-transform bg-gray-100">
+                                <img
+                                    src={p.preview}
+                                    alt={`${p.title} preview`}
+                                    className="w-full h-full object-cover object-top"
+                                />
                             </div>
                         </article>
                     ))}
