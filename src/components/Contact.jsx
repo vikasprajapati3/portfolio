@@ -95,7 +95,7 @@ export default function Contact() {
                         <div className="flex items-center gap-4 flex-wrap">
                             <button type="submit" disabled={!valid || status === 'sending'}
                                 className="inline-flex items-center gap-2 px-6 py-3 border border-line rounded
-                                 hover:border-ink hover:gap-3 transition-all disabled:opacity-50 disabled:cursor-not-allowed">
+                                 bg-white text-black hover:gap-3 transition-all disabled:cursor-not-allowed">
                                 {status === 'sending' ? 'Sending...' : 'Send message'} →
                             </button>
 
