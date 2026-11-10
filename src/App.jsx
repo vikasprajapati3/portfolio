@@ -1,24 +1,22 @@
-import About from './components/About'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
+import { Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
-import Hero from './components/Hero'
-import Projects from './components/Projects'
-import TechStack from './components/TechStack'
+import Footer from './components/Footer'
+import Home from './pages/Home'
+import AboutPage from './pages/AboutPage'
+import ContactPage from './pages/ContactPage'
 
 export default function App() {
   return (
     <>
       <Header />
-
-      <main>
-        <Hero />
-        <About />
-        <Projects />
-        <TechStack />
-        <Contact />
-        <Footer />
+      <main id="main-content">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
       </main>
+      <Footer />
     </>
   )
 }
