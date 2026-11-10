@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 import {
     faGithub,
     faLinkedin,
@@ -41,7 +42,21 @@ export default function Footer() {
             <div className="max-w-container mx-auto px-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
 
                 <div className="text-muted text-base md:text-lg">
-                    © {new Date().getFullYear()} Vikas Prajapati
+                    © {new Date().getFullYear()}{' '}
+                    <Link
+                        to="/about"
+                        aria-label="About Vikas"
+                        className="hover:text-ink transition-colors"
+                    >
+                        Vikas
+                    </Link>{' '}
+                    <Link
+                        to="/contact"
+                        aria-label="Contact Vikas Prajapati"
+                        className="hover:text-ink transition-colors"
+                    >
+                        Prajapati
+                    </Link>
                 </div>
 
                 <div className="flex items-center gap-4">
