@@ -20,7 +20,7 @@ export default function ContactPage() {
                         email: 'vikasrjc7@gmail.com',
                         sameAs: [
                             'https://github.com/vikasprajapati3',
-                            'https://www.linkedin.com/in/vikas-prajapati-0a1032330',
+                            'https://www.linkedin.com/in/vikasprajapati3',
                         ],
                     },
                 }}

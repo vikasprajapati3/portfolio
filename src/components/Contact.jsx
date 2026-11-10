@@ -111,7 +111,7 @@ export default function Contact() {
                     <div className="mt-14 pt-8 border-t border-line">
                         <p className="text-muted text-base">
                             Or find me on{' '}
-                            <a href="https://www.linkedin.com/in/vikas-prajapati-0a1032330"
+                            <a href="https://www.linkedin.com/in/vikasprajapati3"
                                 target="_blank" rel="noopener noreferrer" className={linkCls}>LinkedIn</a>{' '}and{' '}
                             <a href="https://github.com/vikasprajapati3"
                                 target="_blank" rel="noopener noreferrer" className={linkCls}>GitHub</a>.

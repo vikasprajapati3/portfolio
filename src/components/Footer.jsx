@@ -23,7 +23,7 @@ const LINKS = [
         external: true,
     },
     {
-        href: 'https://www.linkedin.com/in/vikas-prajapati-0a1032330',
+        href: 'https://www.linkedin.com/in/vikasprajapati3',
         icon: faLinkedin,
         aria: 'LinkedIn',
         external: true,

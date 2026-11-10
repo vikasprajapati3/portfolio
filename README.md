@@ -28,7 +28,7 @@ npm run preview
 ## Contact
 
 - Email: vikasrjc7@gmail.com
-- LinkedIn: [vikas-prajapati-0a1032330](https://www.linkedin.com/in/vikas-prajapati-0a1032330)
+- LinkedIn: [vikas-prajapati-0a1032330](https://www.linkedin.com/in/vikasprajapati3)
 - GitHub: [@vikasprajapati3](https://github.com/vikasprajapati3)
 
 ## License
